@@ -2,7 +2,7 @@ import crawledData
 
 
 # 결과가 출력될 파일
-f = open('C:\\Users\\KHS\\Desktop\\Study\\Python\\WebCrolling\\result.json', 'w')
+f = open('result.json', 'w')
 
 
 dic = {}    # 만들어진 객체가 담길 딕셔너리
