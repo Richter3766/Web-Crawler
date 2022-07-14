@@ -8,6 +8,7 @@ requests 와 BeautifulSoup 패키지 install 필요
   기본 구조
 url 정보를 통해 html 문서를 받아오고
 BeautifulSoup에 내장된 파싱 함수를 이용해 파싱.
+
 (이렇게 파싱된 데이터는 
 find 나 select 등 다른 함수를 이용해 
 추가 정보 추출 가능)
@@ -17,6 +18,7 @@ find 나 select 등 다른 함수를 이용해
 웹 사이트가 봇(bot)이 보낸 요청으로 인지하고
 데이터를 주지 않는 경우가 있음
 -> requests 함수의 추가 인자인 header 에 유저 정보를 전달하여 해결 가능
+
 (http://www.useragentstring.com/ 사이트 내에 있는 Mozilla ~~ 부분)
 
 2. 다수의 url을 크롤링하고 싶으면 해당 url 주소의 규칙을 추측해서
