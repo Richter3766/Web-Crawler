@@ -98,7 +98,7 @@ class CrawledData:
             self.setContents(contents.getText()
                              .replace(u'\xa0', u'').replace(u'\u200b', u'').replace("\n", " ").strip())
         else:
-            print(response.status_code)
+            print(response.status_code)     # url 이 없을 경우 상태 코드 출력
 
     # 클래스 기본 함수
     def getTitle(self):
