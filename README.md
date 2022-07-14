@@ -26,7 +26,9 @@ url로 전달해줘야 함
 
 ex) url = "https://www.nocutnews.co.kr/news/" + str(5786521 + page * 10)
                                                       str 내부가 규칙
+                                                      
 3. 간혹 url 에서 정보를 가져왔는 데 비어있는 때가 있음. (페이지가 삭제된 경우 등)
+
 -> checkValue 함수로 객체 내 정보 검사, 하나라도 비어있으면 버림
  
 4. 이외 발생할 가능성이 있는 모든 오류는 try catch 문으로 처리
