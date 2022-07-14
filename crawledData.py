@@ -133,7 +133,7 @@ class CrawledData:
 
         return data
 
-
+# 새로운 객체가 정보를 제대로 가지고 있는 지 확인
 def checkValue(newValue: CrawledData) -> bool:
     if newValue.getTitle() is None:
         return False
