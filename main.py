@@ -7,9 +7,10 @@ f = open('C:\\Users\\KHS\\Desktop\\Study\\Python\\WebCrolling\\result.json', 'w'
 
 dic = {}    # 만들어진 객체가 담길 딕셔너리
 n = 0       # 딕셔너리 크기
+num = 100   # Crawling 할 url 개수
 
 f.write("[\n")
-for page in range(100):
+for page in range(num):
     # url 생성자 | Crawling 을 하려는 웹 주소의 규칙을 찾아야 함
     # 아래는 예시
 
@@ -25,7 +26,8 @@ for page in range(100):
     # url 내에 빠진 정보가 없을 때만 Crawling
     try:
         newValue.crawling()
-
+        if crawledData.checkValue(newValue) is False:
+            continue
     except:
         continue
 
@@ -44,3 +46,5 @@ f.write("\n]")
 f.close()
 
 print("Processing complete\n")
+
+

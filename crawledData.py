@@ -1,4 +1,5 @@
-import requests, string
+import requests
+import string
 from bs4 import BeautifulSoup
 
 
@@ -131,3 +132,15 @@ class CrawledData:
             s.translate(str.maketrans('', '', string.punctuation))
 
         return data
+
+
+def checkValue(newValue: CrawledData) -> bool:
+    if newValue.getTitle() is None:
+        return False
+    if newValue.getCategory() is None:
+        return False
+    if newValue.getSummary() is None:
+        return False
+    if newValue.getContents() is None:
+        return False
+    return True
