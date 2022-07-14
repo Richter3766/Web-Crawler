@@ -23,6 +23,7 @@ find 나 select 등 다른 함수를 이용해
 
 2. 다수의 url을 크롤링하고 싶으면 해당 url 주소의 규칙을 추측해서
 url로 전달해줘야 함
+
 ex) url = "https://www.nocutnews.co.kr/news/" + str(5786521 + page * 10)
                                                       ↑ 이부분이 규칙
 3. 간혹 url 에서 정보를 가져왔는 데 비어있는 때가 있음. (페이지가 삭제된 경우 등)
