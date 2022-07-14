@@ -1,7 +1,8 @@
 # Web-Crawler
 web crawling by python, bs4
 
-파이썬을 이용한 Web Crawling
+파이썬을 이용한 Web Crawling,
+
 requests 와 BeautifulSoup 패키지 install 필요
 
   기본 구조
