@@ -8,7 +8,6 @@ requests 와 BeautifulSoup 패키지 install 필요
   기본 구조
 url 정보를 통해 html 문서를 받아오고
 BeautifulSoup에 내장된 파싱 함수를 이용해 파싱.
-
 (이렇게 파싱된 데이터는 
 find 나 select 등 다른 함수를 이용해 
 추가 정보 추출 가능)
